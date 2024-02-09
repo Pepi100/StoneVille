@@ -52,3 +52,99 @@ Cerințe materiale
 - [ ] (0.05) Folosirea unui normal map pentru a crea un obiect care dă senzația că are asperități chiar dacă nu și-a modificat vertecșii
 
 
+### Meniu
+
+- [x] (0.2p) La intrarea în joc se va afișa meniul principal al jocului. Jocul nu este pornit (de exemplu, este în pauză) până nu se iese din meniu.
+- [ ] (0.05) Folosirea unei imagini într-un panou
+- [x] (0.05) Folosirea panourilor de tip HorizontalBox și/sau VerticalBox
+- [ ] (0.2p) Trecerea printre ecranele meniului folosind WidgetSwitcher
+- [ ] (0.2-0.4p) Crearea unei clase custom pentru butoane. (se punctează în funcție de căt de complexă este.
+
+Meniul principal poate conține următoarele butoane:
+- [x] (0.2p)Butonul de pornire a unui joc nou. Butonul va avea un text sugestiv, de exemplu "Start". La intrarea în aplicație, jocul este în pauză, și rămâne așa până îl activează utilizatorul
+- [ ] (0.3p)Butonul de continuare a ultimului joc început. La click pe acest buton, pornește jocul afișând exact starea în care a fost lăsat de utilizator înainte de ultima închidere (sau ultima salvare)
+- [ ] (0.2p) Ecranul de setări generale (pentru profilul jucătorului sau caracteristicile unui joc nou. Ecranul de setări va fi accesat printr-un buton din meniul principal. Ecranul de setări va conține diverse inputuri și un buton de trimitere a datelor. La click pe buton setările se vor salva în proprietățile pionului/caracterului.
+
+Inputurile folosite în ecranul de setări (sau alte ecrane care cer informații de la utilizator pot fi de următoarele tipuri (atenție, se punctează pentru fiecare tip distinct, nu input în sine):
+
+- [ ] (0.05) EditableText
+- [ ] (0.05) TextBox
+- [ ] (0.1) Slider. Se vor seta parametri precum: valorile minime și maxime și pasul.
+- [ ] (0.1) SpinBox. Se vor seta parametri precum: valorile minime și maxime, numrul de cifre zecimale, pasul (delta), exponentul de creștere (creșterea pasului pentru valori mai mari)
+
+- [ ] (0.05) Checkbox
+- [ ] (0.1) ComboBox cu minim 2 opțiuni
+- [ ] (0.1) RadialSlider Se vor seta parametri precum: pasul, valoarea implicită etc.
+- [ ] (0.1) Se dă suplimentar 0.1 pentru ComboBox dacă opțiunile sunt adăugate dinamic.
+Se adună separat 0.1 pentru fiecare tip de input care e inclus într-un widget custom în scopul adăugării unor funcționalități noi la completare (Exemplu: un borderbox care își schimbă culoarea de background la fiecare apăsare de tastă
+
+- [ ] (0 - 0.3)Aspectul ecranului de setări. Se acordă puncte în funcție de:
+Cel mai important: Alinierea elementelor (de exemplu cu un grid)
+
+Faptul că fiecare input are etichetă asociată (text în dreptul lui care să spună rolul) și/sau tool/tip,
+
+Schimbarea culorilor implicite
+
+Text lizibil (culori alese cu contrast bun; textul nu e prea transparent sau suprapus cu o imagine)
+
+Folosirea unui background plăcut.
+
+- [ ] (0.1) Adăugarea dinamică (prin program) a unor elemente în widget, folosind metode de tipul "Add Child to [container]"
+- [ ] (0.1) Ștergerea dinamică (prin program) a unor elemente în widget, folosind metode de tipul "Remove Child"- [ ]
+- [ ] (0.4p) Butonul de încărcare a unui joc vechi. La click pe acest buton se va deschide un ecran cu salvările anterioare ale utilizatorului din care acesta poate să aleagă ce joc dorește. Salvările pot fi listate prin butoane sau printr-un combobox. Ecranul va fi generat dinamic în funcție de fișierele din folderul de jocuri salvate. Identificarea jocurilor care corespund jucătorului curent se va face prin username.
+
+Butonul de afișare a informațiilor despre joc:
+
+- [ ] (0.1) va duce spre un ecran cu un text despre joc care explică povestea/contextul. Ecranul are un buton de revenire la meniul principal.
+
+- [ ] (0-0.4) Stilizare specială a ecranului cu textul despre joc. Punctajul se dă în funcție de cât de complexă și frumoasă e stilizarea: 
+
+folosirea unui scrollPane
+
+folosirea culorilor diferite în cadrul textului
+
+folosirea stilurilor diferite: bold/italic
+
+stilizarea textului sub formă de secțiuni cu titluri
+
+folosirea listelor
+
+folosirea imaginilor în cadrul textului
+
+- [x] (0.1p) Butonul de ieșire din aplicație (la click pe el se închide jocul)
+
+- [ ](0.1) Cu ajutorul unui widget se va crea un meniu afișat pe parcursul jocului care va avea butoanele (punctate suplimentar după cum urmează):
+
+- [ ] (0.1) Pauza - la Click pe el, jocul intră în pauză, iar când dăm iar click pe el reîncepe. Textul butonului ar trebui să difere în tipul pauzei, de exemplu să scrie "Reîncepe"
+
+- [ ] (0.1) Un buton de ieșire din joc.
+- [ ] (0.2) Un buton/shortcut cu tastă care pune în pauză jocul și afișează meniul principal. în această situătie meniul trebuie să aibă un buton suplimentar cu textul "Continua".
+
+- [ ] (0.1-0.3) Afișarea informațiilor legate de starea jucătorului (sau a altor actori) în timpul jocului. Se punctează în funcție de cât de complexă e afișarea.
+
+- [ ] (0.1) Folosirea unei bare de progres în afișarea informațiilor pentru jucător
+
+- [ ] (0.2) Opțiunea de a ascunde și reafișa afișajul din timpul jocului, de exemplu, la apăsarea unei taste.
+
+- [ ] (0.2) Simularea unor radio buttons folosind butoane custom
+
+- [ ] (0.3) Simularea unor radio buttons folosind checkbox-uri custom
+
+- [ ] (0.2-0.5) Unul sau mai multe ecrane informative care apar în urma unui eveniment sau a unei stări în care ajunge jocul. De exemplu, un ecran în care jucătorul e informat că a intrat într-un nivel nou sau că a "murit". Se punctează în funcție de numarul lor si de complexitatea afișării.
+
+- [ ] (0.1) Buton de restart într-un ecran informativ, pentru cazul în care jucătorul a murit sau s-a terminat nivelul
+
+- [ ] (0.2-0.4) Loading screen - se punctează în funcție de complexitate
+
+
+Sunete (recomandat: 0.2 maxim:0.5)
+
+- [ ] (0.1) Adăugarea unui sunet în cadrul jocului
+
+Se punctează suplimentar:
+
+- [ ] (0.1) Sunetul a apărut în cadrul unui widget în urma unui eveniment (de exemplu, click pe buton)
+
+- [ ] (0.1) Sunetul a apărut în urma unei coliziuni
+
+- [ ] (0.1-0.2) Sunetul depinde de acțiunile jucătorului și de mediu: deplasarea prin nisip generează alt sunet decât cea prin băltoace)
